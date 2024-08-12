@@ -1011,11 +1011,14 @@ img {
   color: #dd1d01;
 }
 
+.menulist__wrapper {
+  padding: 5rem 0;
+}
 .menulist__content {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
-  padding: 5rem 0;
+  padding-bottom: 5rem;
 }
 .menulist__title {
   display: flex;
@@ -1028,7 +1031,7 @@ img {
 .menulist__title h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  font-family: "Cookie", cursive;
+  font-family: "Patrick Hand", cursive;
 }
 .menulist__menu {
   display: grid;

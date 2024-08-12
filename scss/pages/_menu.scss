@@ -2,9 +2,13 @@
 @use "../base/" as *;
 
 .menulist {
+  &__wrapper {
+    padding: 5rem 0;
+  }
+
   &__content {
     @include evenGrid(1, 1rem);
-    padding: 5rem 0;
+    padding-bottom: 5rem;
   }
   &__title {
     @include centerAll;
@@ -13,7 +17,7 @@
     h2 {
       font-size: 2.5rem;
       margin-bottom: 1.5rem;
-      font-family: $font-secondary;
+      font-family: $font-primary;
     }
   }
   &__menu {
