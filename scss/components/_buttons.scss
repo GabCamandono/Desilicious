@@ -49,5 +49,17 @@
             color: $clr--secondary;
         }
     }
+    &.bg--product{
+        @extend .btn;
+        background-color: transparent;
+        border: 1px solid $clr--secondary;
+        color: $clr--light;
+        border-radius: 2rem;
+        padding: 0.6rem 1.5rem;
+        &:hover {
+            background-color: $clr--light;
+            color: $clr--secondary;
+        }
+    }
 }
 

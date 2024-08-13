@@ -1,14 +1,18 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
-.menulist {
-  &__wrapper {
-    padding: 5rem 0;
-  }
+.menuList {
+  padding: 10rem 0;
 
   &__content {
     @include evenGrid(1, 1rem);
     padding-bottom: 5rem;
+
+    img {
+    width: 70rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+  }
   }
   &__title {
     @include centerAll;
@@ -36,10 +40,5 @@
     p {
       margin-bottom: 2rem;
     }
-  }
-  img {
-    width: 70rem;
-    border-radius: 2rem;
-    margin: 0 auto;
   }
 }

@@ -1,8 +1,8 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
-.homebanner {
-  padding: 5rem 0;
+.homeBanner {
+  padding: 10rem 0;
   &__wrapper {
     @include centerAll;
     flex-direction: column;
@@ -25,7 +25,7 @@
   }
 }
 
-.homemenu {
+.homeMenu {
   padding: 5rem 0;
   &__title {
     @include centerAll;
@@ -59,7 +59,7 @@
   }
 }
 
-.homeabout {
+.homeAbout {
   background-image: url(../../desilicious/IMG/about.png);
   @include bgImage-size;
   height: 70vh;
@@ -75,7 +75,7 @@
   }
 }
 
-.homemenulist {
+.homeMenulist {
   padding: 5rem 0;
   &__title {
     @include centerAll;
@@ -188,7 +188,7 @@
   }
 }
 
-.homeblog {
+.homeBlog {
   &__title {
     text-align: center;
     max-width: 30rem;
