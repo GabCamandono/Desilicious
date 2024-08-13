@@ -29,6 +29,13 @@
       }
     }
   }
+
+  &__link {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
   &__subscribe {
     margin-bottom: 1rem;
     position: relative;
@@ -54,5 +61,13 @@
     position: absolute;
     right: -2rem;
     top: 0.5rem;
+  }
+}
+
+@include mediaQuery(520px){
+  .footer {
+    &__wrapper {
+      @include evenGrid (1, 1rem);
+    }
   }
 }

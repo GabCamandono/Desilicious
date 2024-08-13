@@ -7,6 +7,7 @@
   &__wrapper {
     padding-left: 15rem;
     padding-right: 25rem;
+    @include evenGrid (1, 1rem);
   }
 
   &__content {
@@ -23,6 +24,14 @@
     }
     a {
       padding-bottom: 2rem;
+    }
+  }
+}
+
+@include mediaQuery (520px) {
+  .blogBanner {
+    &__wrapper {
+      padding: 0;
     }
   }
 }

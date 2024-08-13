@@ -42,3 +42,17 @@
     }
   }
 }
+
+@include mediaQuery (520px) {
+  .menuList {
+    @include centerAll;
+    &__menu {
+      @include evenGrid (1, 1rem);
+    }
+    &__food {
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+}

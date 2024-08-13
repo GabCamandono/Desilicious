@@ -62,9 +62,9 @@
 .homeAbout {
   background-image: url(../../desilicious/IMG/about.png);
   @include bgImage-size;
-  height: 70vh;
   width: 100%;
   padding: 13rem 0;
+
   &__details {
     max-width: 40rem;
     h4 {
@@ -209,9 +209,42 @@
     h4 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
-      &:hover{
+      &:hover {
         color: $clr--secondary;
       }
+    }
+  }
+}
+
+@include mediaQuery (520px) {
+  .homeMenu {
+    &__wrapper {
+      @include evenGrid (1, 1rem);
+    }
+  }
+
+  .homeMenulist {
+    padding-bottom: 0;
+    &__wrapper {
+      @include evenGrid (1, 1rem);
+    } 
+  }
+
+  .bat {
+    padding: 0;
+    &__wrapper {
+      background-image: none;
+    }
+    &__table{
+      form {
+        width: 20rem
+      }
+    }
+  }
+
+  .homeBlog {
+    &__wrapper {
+      @include evenGrid (1, 1rem);
     }
   }
 }

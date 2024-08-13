@@ -75,17 +75,33 @@
     table {
       tr {
         td {
+          padding-bottom: 1rem;
           a {
             color: $clr--light;
             font-size: 1.2rem;
             padding-right: 2rem;
-
             &:hover {
-                color:  $clr--secondary;
+              color: $clr--secondary;
             }
           }
         }
       }
+    }
+  }
+}
+
+@include mediaQuery (520px) {
+  .productBanner {
+    &__wrapper {
+      @include evenGrid (1, 1rem);
+      padding: 0;
+      justify-items: center;
+    }
+
+    &__products {
+      @include evenGrid (1, 1rem);
+      width: 100%;
+      grid-row: 2 / 3;
     }
   }
 }

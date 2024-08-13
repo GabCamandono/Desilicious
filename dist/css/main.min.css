@@ -901,6 +901,11 @@ img {
 .footer ul li a:hover {
   color: #dd1d01;
 }
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
 .footer__subscribe {
   margin-bottom: 1rem;
   position: relative;
@@ -928,9 +933,17 @@ img {
   top: 0.5rem;
 }
 
+@media screen and (max-width: 520px) {
+  .footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
 .header {
   padding: 1rem 0;
   width: 100%;
+  z-index: 9999;
   position: fixed;
   box-shadow: rgba(227, 49, 10, 0.1) 0px 4px 12px;
 }
@@ -1014,6 +1027,9 @@ img {
 .blogBanner__wrapper {
   padding-left: 15rem;
   padding-right: 25rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
 }
 .blogBanner__content img {
   border-radius: 2rem;
@@ -1030,6 +1046,11 @@ img {
   padding-bottom: 2rem;
 }
 
+@media screen and (max-width: 520px) {
+  .blogBanner__wrapper {
+    padding: 0;
+  }
+}
 .chefBanner {
   padding: 10rem 0;
 }
@@ -1067,6 +1088,13 @@ img {
   color: #dd1d01;
 }
 
+@media screen and (max-width: 520px) {
+  .chefBanner__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
 .contactPage {
   padding: 10rem 0;
 }
@@ -1074,7 +1102,8 @@ img {
   padding-left: 12rem;
   padding-right: 12rem;
 }
-.contactPage__wrapper h2, .contactPage__wrapper h4 {
+.contactPage__wrapper h2,
+.contactPage__wrapper h4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1086,6 +1115,9 @@ img {
 }
 .contactPage__wrapper h4 {
   font-weight: 400;
+}
+.contactPage__wrapper iframe {
+  border-radius: 2rem;
 }
 .contactPage__info {
   display: grid;
@@ -1144,6 +1176,26 @@ img {
   text-align: center;
 }
 
+@media screen and (max-width: 520px) {
+  .contactPage__wrapper {
+    padding: 0;
+  }
+  .contactPage__wrapper iframe {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .contactPage__info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+  }
+  .contactPage__info li {
+    margin-bottom: 0;
+  }
+  .contactPage__input input, .contactPage__input textarea {
+    width: 100%;
+  }
+}
 .homeBanner {
   padding: 10rem 0;
 }
@@ -1217,7 +1269,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 70vh;
   width: 100%;
   padding: 13rem 0;
 }
@@ -1382,6 +1433,35 @@ img {
   color: #dd1d01;
 }
 
+@media screen and (max-width: 520px) {
+  .homeMenu__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .homeMenulist {
+    padding-bottom: 0;
+  }
+  .homeMenulist__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .bat {
+    padding: 0;
+  }
+  .bat__wrapper {
+    background-image: none;
+  }
+  .bat__table form {
+    width: 20rem;
+  }
+  .homeBlog__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
 .menuList {
   padding: 10rem 0;
 }
@@ -1429,6 +1509,22 @@ img {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 520px) {
+  .menuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .menuList__menu {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .menuList__food ul {
+    flex-direction: column;
+  }
+}
 .productBanner {
   padding: 10rem 0;
 }
@@ -1498,6 +1594,9 @@ img {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
 }
+.productBanner__category table tr td {
+  padding-bottom: 1rem;
+}
 .productBanner__category table tr td a {
   color: #fff;
   font-size: 1.2rem;
@@ -1505,4 +1604,21 @@ img {
 }
 .productBanner__category table tr td a:hover {
   color: #dd1d01;
+}
+
+@media screen and (max-width: 520px) {
+  .productBanner__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 0;
+    justify-items: center;
+  }
+  .productBanner__products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    width: 100%;
+    grid-row: 2/3;
+  }
 }/*# sourceMappingURL=main.min.css.map */

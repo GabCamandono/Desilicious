@@ -4,6 +4,7 @@
 .header {
   padding: 1rem 0;
   width: 100%;
+  z-index: 9999;
   position: fixed;
   box-shadow: rgba(227, 49, 10, 0.1) 0px 4px 12px;
   &__wrapper {
